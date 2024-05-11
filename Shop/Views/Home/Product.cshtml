@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Product";
+    var productId = ViewBag.ProductId;
+}
+<link rel="stylesheet" href="~/css/productPage.css"/>
+<input type="hidden" id="productId" value="@productId">
+<div id="productDiv">
+    <div id="imgDiv">
+        <img id="productImg"/>
+    </div>
+    <div id="infoDiv">
+        <h1 id="productTitle"></h1>
+        <h6 id="productCategory"></h6>
+        <h2 id="productPrice"></h2>
+        <div id="moreInfo">
+            <p id="productDescription"></p>
+            <p id="productCharacteristics"></p>
+        </div>
+        <a href="#" id="buyBtn" class="btn btn-primary card-controls">Buy</a>
+    </div>
+</div>
+<script src="~/js/productPage.js"></script>

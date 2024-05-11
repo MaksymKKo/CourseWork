@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "RobinHood";
+    var userId = ViewBag.UserId;
+    var userIdentity = ViewBag.Identity;
+}
+<link rel="stylesheet" href="~/css/shopMainPage.css" />
+<input type="hidden" id="userId" value="@userId">
+<input type="hidden" id="userIdentity" value="@userIdentity">
+<div class="content">
+    <div id="find">
+        <h6 style="text-align:center; color:white">Find Product</h6>
+        <form class="d-flex" asp-action="Find">
+            <input class="form-control me-2" id="searchInput" type="search" name="searchProduct" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-warning" id="findBtn" type="submit">Search</button>
+        </form>
+    </div>
+    <div class="container">
+        <div id="menu">
+            <div id="menu-list" class="list-group">
+                <h3 id="categoryTagTitle">Categories</h3>
+                <button type="button" class="list-group-item list-group-item-success active" aria-current="true" category-id="0">
+                    All Products
+                </button>
+                @*Categories*@
+            </div>
+        </div>
+        <div id="productsDiv">
+            @*PRODUCTS*@
+        </div>
+    </div>
+    <div id="paginationDiv">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" id="prevButton"><<<</a></li>
+                <li class="page-item"><a class="page-link" id="nextButton">>>></a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<script src="~/js/shopMainPage.js"></script>

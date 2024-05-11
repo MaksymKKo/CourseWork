@@ -1,0 +1,50 @@
+html {
+    font-size: 14px;
+}
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: floralwhite;
+}
+ul {
+    font-size: 19px;
+}
+#cart {
+    display:flex;
+    justify-content:center;
+    border: 2px solid black;
+    margin-right: 10px;
+    width: 44px;
+    height: 44px;
+    background-color: lightgreen;
+}
+#cart img {
+    width: 25px;
+    height: 25px;
+    
+}
+#login {
+    border-radius: 0.4em;
+    background-color: lightgreen;
+    width: 100px
+}
+#logout {
+    border-radius: 0.4em;
+    background-color: lightgreen;
+    width: 250px;
+    border: 2px solid black
+}

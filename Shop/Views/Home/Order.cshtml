@@ -1,0 +1,20 @@
+﻿@{
+    var orderId = ViewBag.OrderId;
+}
+<link rel="stylesheet" href="~/css/order.css" />
+<input type="hidden" id="orderId" value="@orderId">
+<div id="container">
+    <p>Total Price: <span id="totalPrice">0</span>₴</p>
+</div>
+<table id="table">
+    <thead>
+        <tr>
+            <th>Picture</th>
+            <th>Title</th>
+            <th>Total Product Price</th>
+            <th>Quantity</th>
+        </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+</table>
+<script src="~/js/order.js"></script>

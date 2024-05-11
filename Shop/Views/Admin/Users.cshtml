@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Users";
+    var userId = ViewBag.UserId;
+}
+<link rel="stylesheet" href="~/adminPanel/css/adminTabels.css" asp-append-version="true">
+<h1>Users</h1>
+<h3>Edit User Role</h3>
+<input type="hidden" id="userId" value="@userId">
+<form id="myForm">
+    <input type="hidden" id="id">
+    <label for="email">Email</label>
+    <input type="text" id="email" disabled/>
+
+    <label for="password">Password</label>
+    <input type="text" id="password" disabled />
+
+    <label for="role">Role</label>
+    <input type="text" id="role" />
+
+    <button type="submit" class="btn btn-success" id="submit">Save</button>
+    <button type="button" class="btn btn-info" id="clear">Clear</button>
+</form>
+<hr />
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Role</th>
+            <th>Controls</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+<script src="../adminPanel/js/users.js"></script>
+

@@ -1,0 +1,134 @@
+﻿.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+#find {
+    background-color: seagreen;
+    width: 100%;
+    margin: 12px;
+    padding: 10px;
+    border: solid 2px black;
+}
+
+#menu {
+    background-color: seagreen;
+    min-width: 200px;
+    border: solid 2px black;
+    height: 120vh;
+    overflow-y: auto;
+    margin-right:10px;
+    text-align:left;
+}
+
+#productsDiv {
+/*    border: solid 2px black;*/
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    width: 90vw;
+    margin: 0 auto; 
+}
+
+#pagination{
+    display:flex;
+    margin:10px;
+    width:100%;
+    justify-content:center;
+}
+
+#categoryTagTitle {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    border-bottom: 2px solid black
+}
+
+.card-controls {
+    width: 30%;
+    border: 2px solid black;
+}
+
+.card {
+    border: 3px solid black;
+    border-radius:0.5em;
+    margin-bottom: 20px;
+    width: calc(30% - 20px);
+}
+
+.priceDiv {
+    border-top: solid 2px black;
+    padding: 10px;
+    padding-left: 20px;
+    display: flex;
+}
+
+.btnDiv {
+    border-top: solid 2px black;
+    border-end-end-radius: 0.35em;
+    border-end-start-radius: 0.35em;
+    padding: 10px;
+    display: flex;
+    background-color: seagreen;
+    justify-content: center;
+}
+
+.pagination {
+    background-color: seagreen;
+    margin: 12px;
+    padding: 10px;
+}
+
+.card img {
+    padding: 5px;
+    width: 280px;
+    height: 330px;
+    margin: auto;
+}
+
+.card h3 {
+    padding-top: 5px;
+    font-family: Calibri;
+}
+
+.card div h3 {
+    padding-top: 5px;
+    font-family: Calibri;
+}
+
+.card p {
+    padding-top: 5px;
+    font-size: 15px;
+    font-family: Calibri;
+    font-style: italic;
+}
+
+.disabled {
+    color: #777; 
+    cursor: not-allowed; 
+    pointer-events: none; 
+}
+
+#paginationDiv {
+    background-color: seagreen;
+    width: 100%;
+    display: flex;
+    width: 100%;
+    margin: 12px;
+    padding: 10px;
+    border: solid 2px black;
+    justify-content: center;
+}
+.page-item {
+    margin: 0 0 0 15px;
+}

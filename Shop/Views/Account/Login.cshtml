@@ -1,0 +1,41 @@
+﻿@model LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+<body style = "background-color: floralwhite;">
+    <div class="container" >
+        <div class="d-flex justify-content-end mb-3">
+            <div>
+                <span style="color:green">Not have an account yet?</span>
+                <a class="btn btn-info ml-2" asp-action="Register" asp-controller="Account">Register</a>
+            </div>
+        </div>
+        <h1 class="text-center mb-4">Login</h1>
+        <form asp-antiforgery="true" asp-action="Login">
+            <div class="alert alert-danger" asp-validation-summary="ModelOnly"></div>
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <div class="form-group">
+                        <label asp-for="Email">Email</label>
+                        <input asp-for="Email" id="email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Password">Password</label>
+                        <input asp-for="Password" type="password" id="password" class="form-control" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <hr />
+                    <div class="form-group text-center" style="margin-bottom:100px">
+                        <button type="submit" class="btn btn-success">Login</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.1.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/jquery.validate.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validation.unobtrusive/3.2.10/jquery.validate.unobtrusive.min.js"></script>
+
+

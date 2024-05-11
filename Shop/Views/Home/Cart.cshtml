@@ -1,0 +1,31 @@
+﻿<link rel="stylesheet" href="~/css/cart.css"/>
+<a asp-action="Orders" class="btn btn-info">All My Orders</a>
+<div id="container">
+    <h3>Make Order: </h3>
+    <p>Total Price: <span id="totalPrice">0</span>₴ (<span>+150</span>₴ delivery)</p>
+    @if (!User.Identity.IsAuthenticated)
+    {
+        <a id="loginOrder" class="nav-link text-dark btn" asp-area="" asp-controller="Account" asp-action="Login">Login to make Order</a>
+    }
+    else
+    {
+        <a class="btn btn-info" id="makeOrder">Order</a>
+    }
+</div>
+<table id="table">
+    <thead>
+        <tr>
+            <th>Picture</th>
+            <th>Title</th>
+            <th>Total Product Price</th>
+            <th>Quantity</th>
+            <th>Delete All</th>
+            <th>Edit Quantity</th>
+        </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+</table>
+<div id="containerNoInfo">
+    <h3>Sorry, but unfortunately you have no products in your shopping cart...</h3>
+</div>
+<script src="~/js/cart.js"></script>
